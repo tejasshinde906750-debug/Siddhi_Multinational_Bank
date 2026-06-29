@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vehicleLoan.css">
+</head>
+<body>
+    <form action="VehicleLoanServlet" method="post" enctype="multipart/form-data">
+<div class="container">
+
+
+<!-- 👤 Personal Details -->
+ <div class="Info">
+    <h2>Vehicle Loan Form</h2>
+<label>Full Name</label>
+<input type="text" name="name" placeholder="Enter Name" required><br><br><br>
+
+<label>Father Name</label>
+<input type="text" name="father" placeholder="Enter Father/Husband Name" required><br><br><br>
+
+<label>Mobile Number</label>
+<input type="text" name="mobile" placeholder="Enter mobile number" required><br><br><br>
+
+<label>Email</label>
+<input type="email" name="email" placeholder="Enter Email id"><br><br><br>
+
+<label>Address</label>
+<input type="text" name="address" placeholder="Enter Address" required><br><br><br>
+
+<label>Aadhaar Number</label>
+<input type="text" name="aadhaar" required placeholder="Enter Adhaar Number"><br><br><br>
+
+<label>PAN Number</label>
+<input type="text" name="pan" required placeholder="Enter Pan Number"><br><br><br>
+
+<button>Apply</button>
+ </div>
+
+<div class="Info">
+
+<!-- 🚘 Vehicle Details -->
+<h3>Vehicle Details</h3>
+
+<label>Vehicle Type</label>
+<select name="vehicleType">
+    <option>Bike</option>
+    <option>Car</option>
+</select><br><br>
+
+<label>Vehicle Model</label>
+<input type="text" name="model" required placeholder="Enter Vehicle Model"><br><br>
+
+<label>Showroom Price</label>
+<input type="number" name="price" required placeholder="Enter Showroom price"><br><br>
+
+<label>Dealer Name</label>
+<input type="text" name="dealer" placeholder="Enter Diller Name"><br><br>
+
+<!-- 💰 Loan Details -->
+<h3>Loan Details</h3>
+
+<label>Loan Type</label>
+<select name="loanType">
+    <option>Vehicle Loan</option>
+</select><br><br>
+
+<label>Loan Amount</label>
+<input type="number" name="loanAmount" required placeholder="Enter Laon Amount"><br><br>
+
+<label>Down Payment</label>
+<input type="number" name="downPayment" placeholder="Enter downPayment"><br><br>
+
+<label>Loan Duration</label>
+<select name="duration">
+    <option>1 Year</option>
+    <option>3 Years</option>
+    <option>5 Years</option>
+</select><br><br>
+
+<!-- 📎 Upload -->
+<label>ID Proof</label>
+<input type="file" name="idProof"><br><br>
+<button><a href="Loan.html">Back</a></button>
+</div>
+
+
+
+</div>
+</form>
+
+
+</body>
+</html>

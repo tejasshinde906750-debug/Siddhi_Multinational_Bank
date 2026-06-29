@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="EducationLoan.css">
+</head>
+<body>
+<form action="EducationLoanServlet" method="post">
+    <div class="container">
+
+<h2>Education Loan Form</h2>
+
+<form>
+
+<label>Student Name</label>
+<input type="text" name="Name" placeholder="Enter Student Name" required><br><br>
+
+<label>Father Name</label>
+<input type="text" name="Father" placeholder="Enter Father Name" ><br><br>
+
+
+<label>Mobile Number</label>
+<input type="text" name="Mobile" placeholder="Enter Mobile Number" required><br><br>
+
+<label>Loan Type</label>
+<select name="LoanType" required>
+    <option value="Education Loan" >Education Loan</option>
+</select><br><br>
+
+<label>College Name</label>
+<input type="text" name="Collage" placeholder="Enter College Name" required><br><br>
+
+<label>Course Name</label>
+<input type="text" name="Course" placeholder="Enter Course Name" required><br><br>
+
+<label>Loan Amount</label>
+<input type="number" name="LoanAmount" placeholder="Enter Loan Amount" required><br><br>
+
+<label>Loan Duration</label>
+<select name="Duration" required>
+    <option>Select Years</option>
+    <option>1 Year</option>
+    <option>2 Years</option>
+    <option>3 Years</option>
+    <option>4 Years</option>
+    <option>5 Years</option>
+</select><br><br>
+<label>Any Id Proof</label>
+<input type="file" name="Proof"><br><br>
+
+<div class="btn">
+    <button>Apply</button>
+    <button><a href="Loan.html">Back</a></button>
+</div>
+
+
+
+</div>
+</form>
+
+</body>
+</html>

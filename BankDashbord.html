@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Dashboard</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    background: #f2f4f8;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1e3a5f;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background: #2b4d73;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 30px;
+}
+
+.main-content h1 {
+    margin-bottom: 30px;
+    color: #333;
+    margin-left:95px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 40px;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 24px;
+    color: green;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+img{
+width:50px;
+height:50px;
+
+}
+
+select{
+   background: #1e3a5f;
+   color:white;
+   Border:none;
+   outerline:none;
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>Bank Menu</h2>
+
+    <ul>
+        <li><a href="Loan.html">Loan</a></li>
+        <li><a href="CreateAccount.html">Create Account</a></li>
+        <li><a href="Deposit.html">Deposit Balance</a></li>
+        <li><a href="Withdraw.html">Withdraw</a></li>
+        <li><a href="KYC.html">Customer KYC</a></li>
+        <li><a href="DeleteAccount.html">Delete Account</a></li>
+        <li><a href="FindAccoundNumber.html"> Find Account Number</a></li>
+        <li><a href="ViewDetails.html">Check Balance & Details</a></li>
+        <li><a href="ViewTransaction.html">View Customer Transaction</a></li>
+        <li> <a href="TodaysTransaction.html">Date Wise View Transactions </a></li>
+        <li><a href="ViewCustomersServlet">All Customers</a></li>
+        <li><a href="MobileBanking.html">Mobile Bank</a></li>
+        
+   <!--    <li><select>
+        <option>View Debtor As Loan</option>
+        <option><a href="ViewGoldLoanCustomer">Gold Loan</a></option>
+        <option>Home Loan</option>
+        <option>Education Loan</option>
+        <option>Bussiness Loan</option>
+        <option>Personal Loan</option>
+        <option>Vehicle Loan</option>
+        
+        </select></li>-->
+    </ul>
+</div>
+
+<!-- Main Dashboard -->
+<div class="main-content">
+
+
+  <h1> SIDDHI MULTINATIONAL BANK	</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <i class="fas fa-wallet"></i>
+    <h3> <a href="DashboardServlet">Bank Balance</a></h3>
+            <p>Total Balance</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-money-bill-wave"></i>
+            <h3><a href="Deposit.html">Deposit Money</a></h3>
+            <p>Deposit here</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3><a href="Withdraw.html">Withdraw</a></h3>
+            <p>Widtdraw here</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-university"></i>
+            <h3><a href="Loan.html">Loan</a></h3>
+            <p>Loan Files</p>
+        </div>
+
+          <div class="card">
+           <i class="fas fa-money-check-dollar"></i>
+            <h3><a href="Transfer.html">Transfer</a></h3>
+            <p>Transfer</p>
+        </div>
+
+
+        <div class="card">
+            <i class="fas fa-id-card"></i>
+            <h3><a href="KYC.html">Customer KYC</a></h3>
+            <p>Verified</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-user-times"></i>
+            <h3><a href="DeleteAccount.html">Delete Account</a></h3>
+            <p>Remove</p>
+        </div>
+        
+         <div class="card">
+            <img alt="" src="financial-profit.png">
+            <h3><a href="EMI.html">EMI </a></h3>
+            <p>Recive All Loan EMI</p>
+
+    </div>
+    
+      <div class="card">
+           <img alt="loupe.png.png" src="loupe.png.png">
+            <h3><a href="FindAccoundNumber.html">Find Account </a></h3>
+            <p>Find Account</p>
+
+    </div>
+    
+    
+    <div class="card">
+           <img alt="transaction.png" src="transaction.png">
+            <h3><a href="TodaysTransaction.html"> View Todays Entrys</a></h3>
+            <p>Todays Transaction</p>
+
+    </div>
+    
+     <div class="card">
+           <img alt="bank.png" src="bank.png">
+            <h3><a href="ViewTransaction.html">View Entrys</a></h3>
+            <p>Customer Transaction</p>
+
+    </div>
+    
+    
+    <div class="card">
+           <img alt="target-audience.png" src="target-audience.png">
+            <h3><a href="ViewCustomersServlet">View All</a></h3>
+            <p>All Customers</p>
+
+    </div>
+    
+    
+    
+    
+</div>
+
+</body>
+</html>
+```

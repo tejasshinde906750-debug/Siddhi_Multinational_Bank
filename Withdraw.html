@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+/* Withdraw.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #eef2f7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card style form */
+form {
+    background: #ffffff;
+    padding: 35px 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-top: 5px solid #dc3545; /* red theme for withdraw */
+}
+
+/* Heading (optional if you add <h2>) */
+form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+input[type="number"]:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.3);
+    outline: none;
+}
+
+/* Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #dc3545;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+/* Hover */
+input[type="submit"]:hover {
+    background: #b02a37;
+}
+
+/* Active click effect */
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* Responsive (mobile) */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+}
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+     
+
+<form action="WithdrawServlet" method="post">
+ <h3>Money Withdraw </h3>
+    <input type="number" name="accno" placeholder="Enter Account No" required><br><br>
+    
+    <input type="number" name="amount" placeholder="Enter Amount" required><br><br>
+    
+    <input type="submit" value="Withdraw">
+</form>
+
+
+
+</body>
+</html>

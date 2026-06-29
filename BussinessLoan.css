@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+    background-color: rgb(255, 0, 128);
+    margin: auto;
+  
+}
+
+
+
+
+.container{
+    width: 40%;
+    height:685px;
+   /* background-color: rgb(192, 192, 78);*/
+     background-color:pink;
+    margin: auto;
+    box-shadow: 2px 1px 2px 1px;
+    box-shadow: color(rgb(191, 225, 38)); 
+padding-bottom: 20px;
+border-radius: 5px;
+   
+  
+}
+input{
+    width: 55%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+select{
+      width: 55%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+ button{
+    background-color: rgb(249, 141, 9);
+    width: 20%;
+    height: 35px;
+    margin-left: 15px;
+    border-radius: 5px;
+      color: black;
+    font: bold;
+
+ }
+ button:hover{
+    cursor: pointer;
+    background-color: rgb(211, 172, 98);
+    box-shadow: 2px 2px 2px 2px; 
+    box-shadow: color(golden);
+    border-radius: 5px;
+ }
+ a{
+    text-decoration: none;
+    color: black;
+    font: bold;
+ }

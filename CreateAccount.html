@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <header>
+          <link rel="stylesheet" href="CreateAccount.css">
+      <form action="CreateAccount" method="post">
+        <h1>SIDDHI MULTINATATIONAL BANK</h1>
+       
+    </header>
+    
+
+<body>
+  
+    <div class="container">
+<label>Account Type</label> 
+       <select name="AccountType" required >
+       <option value="selectAcc">Select</option>
+       <option value="Saving">Saving</option>
+       <option value="SP.Saving">SP.Saving</option>
+       <option value="Pigmy">Pigmy</option>
+       <option value="FD.">FD</option>
+       <option value="Join">Join</option>
+        </select>
+
+       <label>Date</label> 
+        <input type="date" name="date" id="" required> <br><br><br>
+
+       <label>Full Name</label> 
+<input type="text" name="FullName" placeholder="Enter Full Name" required >
+
+      <label>Date of Birth</label>
+<input type="date" name="DOB" required> <br><br><br>
+
+    <label >Adhaar No</label>
+<input type="number" name="Adhaar" placeholder="Enter Adhaar number" required maxlength="12">
+
+      <label>PAN No</label> 
+<input type="text" name="Pan" placeholder="Enter PAN number" required><br><br><br>
+
+     <label>Mobile No</label> 
+<input type="number" name="number" placeholder="Enter Mobile Number" required>
+
+    <label>Email Id</label> 
+<input type="email" name="Email" placeholder="Enter Email Id"><br><br><br>
+
+   <label>Gender</label> 
+<select name="Gender" required>
+    <option value="Gender">Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+
+<label>Marrital Status</label> 
+<select name="MarritalStatus" required>
+<option value="Marriade">Select</option>
+
+    <option value="Marriade">Marriade</option>
+    <option value="Single">Single</option>
+</select> <br><br>
+
+<label>Nationality</label>
+<select name="Nationality" required>
+    <option value="Choose">Choose</option>
+    <option value="American">American</option>
+    <option value="Australian">Australian</option>
+    <option value="Indian">Indian</option>
+    <option value="Italian">Italian</option>
+</select>
+
+<label>Permnent Add</label>
+<Textarea name="Address" required> Address:</Textarea><br><br><br>
+
+<button > Create Account </button>
+<a href="BankDashbord.html">🔙</a>
+
+
+
+    </div>
+    </form>
+</body>
+</html>

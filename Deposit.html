@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+
+/* Deposit.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="number"]:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 95%;
+    padding: 10px;
+    background: #4facfe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #007bff;
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<form action="DepositServlet" method="post">
+ <h3>Money Deposit</h3>
+    <input type="number" name="accno" placeholder="Enter Account No" required><br><br>
+    
+    <input type="number" name="amount" placeholder="Enter Amount" required><br><br>
+    
+    <input type="submit" value="Deposit">
+</form>
+
+</body>
+</html>

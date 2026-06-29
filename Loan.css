@@ -1,0 +1,52 @@
+.body{
+    text-align: center;
+    
+}
+
+
+
+.Loan{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    
+    
+}
+
+.card{
+    background: rgb(10, 222, 215);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+a{
+    text-decoration: none;
+    color: rgb(247, 45, 78);
+}
+
+.card p{
+    margin: 5px 0;
+    color: rgb(75, 58, 58);
+}
+#Back{
+    background-color: rgb(255, 128, 0);
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+img{
+    width: 70px;
+    height: 70px;
+    padding-top: 20px;
+}
+Button{
+ background-color:yellow;	
+
+}

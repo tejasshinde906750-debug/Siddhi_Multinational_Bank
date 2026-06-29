@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Money Transfer</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #1d976c, #93f9b9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background: #fff;
+        padding: 30px;
+        width: 350px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        outline: none;
+        transition: 0.3s;
+        font-size: 14px;
+    }
+
+    input:focus {
+        border-color: #1d976c;
+        box-shadow: 0 0 6px rgba(29,151,108,0.5);
+    }
+
+    input[type="submit"] {
+        background: #1d976c;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background: #148f5a;
+    }
+
+    .back {
+        display: inline-block;
+        margin-top: 12px;
+        text-decoration: none;
+        color: #555;
+        font-size: 14px;
+    }
+
+    .back:hover {
+        color: #000;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>💸 Money Transfer</h2>
+
+    <form action="TransferServlet" method="post">
+
+        <input type="number" name="fromAcc" placeholder="From Account No" required>
+
+        <input type="number" name="toAcc" placeholder="To Account No" required>
+
+        <input type="number" name="amount" placeholder="Enter Amount" required>
+
+        <input type="submit" value="Transfer Money">
+
+    </form>
+
+    <a href="BankDashbord.html" class="back">⬅ Back</a>
+</div>
+
+</body>
+</html>

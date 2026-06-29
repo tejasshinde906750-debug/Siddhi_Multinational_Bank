@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    font-family: Arial, sans-serif;
+}
+
+.phone {
+    width: 340px;
+    height: 600px;
+    background: #ffffff;
+    border-radius: 40px;
+    border: 10px solid #111;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    width: 85%;
+    text-align: center;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #0072ff;
+}
+
+.logo p {
+    margin: 5px 0 20px;
+    font-size: 12px;
+    color: gray;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.login {
+    background: #0072ff;
+    color: white;
+}
+
+.login:hover {
+    background: #005ed1;
+}
+
+.lock {
+    background: #ff3b3b;
+    color: white;
+}
+
+.lock:hover {
+    background: #d60000;
+}
+a{
+	text-decoration:none;
+	color:white;
+}

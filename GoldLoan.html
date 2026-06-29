@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="GoldLoan.css">
+</head>
+<body>
+
+<form action="GoldLoanServlet" method="post">
+    <div>
+    <div class="container">
+        <div class="First">
+        <label>Name</label>
+<input type="text" name="FullName" required placeholder="Enter Name"  required>
+
+<label>Father/Husband Name</label>
+<input type="text" name="Husband" placeholder="Enter Father/Husband Name" required><br>
+
+<label>Mobile No</label>
+<input type="number" name="Mobile" placeholder="Enter Mobile No" required>
+
+<label>Address</label>
+<input type="text" name="Address" placeholder="Enter Address" required><br>
+
+<label>Adhaar No</label>
+<input type="number" name="Adhaar" placeholder="Enter Adhaar No" required>
+
+<label>PAN No</label>
+<input type="text" name="Pan" placeholder="Enter Pan Number"  required><br><br>
+
+<label>Date of Birth</label>
+<input type="date" name="DOB" required >
+</div>
+
+<div class="Second">
+<label>Monthly Income</label>
+<input type="number" name="Income" placeholder="Enter Monthly Income" required><br>
+
+<label>Things</label>
+<select name="Things" required>
+
+    <option value="Chain">Chain</option>
+    <option value="Ring">Ring</option>
+    <option value="Coin">Coin</option>
+    <option value="Bisuits">Biscuits</option>
+        <option value="Necklace">Necklace</option>
+            <option value="Bracelet">Bracelet</option>
+    <option value="Earring">Earring</option>
+<option value="Pendant">Pendant</option>
+<option value="Anklet">Anklet</option>
+<option value="Nose Ring">Noise Ring</option>
+<option value="Mangalsutra">Mangalsutra</option>
+</select>
+
+<label>Gold Weight</label>
+<input type="number" name="Weight" placeholder="Enter Thing weight" required><br>
+
+<label>Gold Purity</label>
+<select name="Purity" required>
+    <option value="18k">18K</option>
+    <option value="19K">20K</option>
+    <option value="22K">22K</option>
+    <option value="24K">24K</option>
+</select> 
+
+<label>Loan Amount</label>
+<input type="number" name="LoanAmount" placeholder="Enter Loan Amount" required> <br>
+
+
+
+<label>Duration</label>
+<input type="text" name="Duration" placeholder="Enter Gold Loan Duration" required>
+<br><br>
+
+<label>Loan Type</label>
+<select name="LoanType" required>
+    <option value="Gold Loan">Gold Loan</option>
+</select>
+
+</div><br><br>
+
+
+  </div>
+  <button>Apply Loan</button><br>
+  <button><a href="Loan.html">Previous</a> Page</button>
+</div>
+
+</form>
+
+
+</body>
+</html>

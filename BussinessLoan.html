@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BussinessLoan.css">
+</head>
+<body>
+
+<form action="BussinessLoanServlet" method="post">
+
+    <div class="container">
+    
+        <h3>Bussiness Loan</h3>
+        <label>Bussiness Name</label>
+        <input type="text" name="BussinessName" placeholder="Enter Bussiness shop" required ><br><br>
+
+        <label>Owner Name</label>
+        <input type="text" name="Owner" placeholder="Enter Owner Name" required><br><br>
+
+        <label>Bussiness Type</label>
+        <select name="Type">
+            <option value="Select">Select</option>
+       <option value="Hotel">Hotel</option>
+       <option value="Bar">Bar</option>
+       <option value="Restaurent">Restaurent</option>
+       <option value="Medical">Medical</option>
+       <option value="Garments">Garments</option>
+       <option value="Cafe">Cafe</option>
+       <option value="Net cafe">Net Cafe</option>
+       <option value="Electonics">Electonics</option>
+       <option value="Fruits">Fruits</option>
+       <option value="Coaching">Coaching</option>
+       <option value="Turs">Turs & Travels</option>
+       <option value="Mobile Shop">Mobile Shop</option>
+       <option value="other">Other</option>
+
+        </select><br><br>
+
+        <label>Reg Number</label>
+        <input type="number" name="RegNo" placeholder="Bussiness Reg Number" required><br><br>
+
+        <label>Loan Type</label>
+        <select name="LoanType" required >
+            <option value="Bussiness Loan">Bussiness Loan</option>
+        </select><br><br>
+
+        <label>Monthly Inc</label>
+        <input type="number" name="MonthlyIncome" placeholder="Enter Monthly Income" required><br><br>
+
+        <label>Loan Amount</label>
+        <input type="number" name="LoanAmount" placeholder="Enter Loan Amount " required><br><br>
+
+        <label>Purpose</label>
+        <select name="Purpose" required>
+            <option value="Startup">Startup</option>
+            <option value="Expansion">Expansion</option>
+            <option value="Equipment">Equipment</option>
+            <option value="Stock">Stock</option>
+            <option value="new Branch">New Branch</option>
+        </select><br><br>
+
+        <label>Experience</label>
+        <select name="Exceperience">
+
+            <option value="3 Months">3 Months</option>
+            <option value="6 Months">6 Months</option>
+            <option value="9 Months">9 Months</option>
+            <option value="1Year">1 Year</option>
+            <option value="2 Years">1.5 Years</option>
+            <option value="2 Years">2 Years</option>
+            <option value="3 Years">3 Years</option>
+            <option value="5 Years + ">5 Years + </option>
+        </select><br><br>
+
+        <label>PAN no</label>
+        <input type="text" name="PAN" placeholder="Enter Pan No"required><br><br>
+           
+        <Label>Lisence</Label>
+        <input type="file" name="Lisence" required"><br>
+<label>Name</label>
+<input type="text" name="Name" placeholder="Enter Customer Name" required><br><br>
+
+
+        <label>Mobile No</label>
+        <input type="number" name="Mobile" placeholder="Enter Mobile number" required><br><br>
+
+       
+
+        <button>Apply Loan</button> <button><a href="Loan.html">Back</a></button>
+
+
+
+
+
+    </div>
+    </form>
+</body>
+</html>

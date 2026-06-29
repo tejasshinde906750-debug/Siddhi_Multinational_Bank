@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Form Container */
+form {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #4facfe;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+    background: #007bff;
+    transform: scale(1.05);
+}
+
+
+
+
+
+</style>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="GoldLoanEMI.css">
+</head>
+<body>
+<form action="GoldLoanEMIServlet" method="post">
+    <input type="Number" name="GoldLoanEMI" placeholder="Enter EMI Amount"><br><br>
+        <input type="Number" name="GoldLoanEMI2" placeholder=" Again Enter EMI Amount"><br><br>
+    
+    <input type="text" name="Mobile" placeholder="Enter Name mobile number"><br><br>
+    
+    <button>Paid EMI</button>
+    </form>
+</body>
+</html>

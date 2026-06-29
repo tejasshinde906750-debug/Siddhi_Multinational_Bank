@@ -1,0 +1,68 @@
+body{
+    text-align: center;
+
+}
+header{
+    color:white;
+    background-color: rgb(255, 85, 0);
+    width: 70%;
+    height: 50px;
+        margin:auto;
+
+}
+
+header img{
+    width: 3%;
+    height: 20%;
+}
+header h1{
+    padding-top: 8px;
+}
+.container{
+     padding-top: 16px;
+    background-color: rgb(255, 187, 198);
+    width: 70%;
+    height: 550px;
+    margin: auto;
+    
+    
+
+}
+
+
+
+.container input{
+    width: 40%;
+    height: 35px;
+    border-radius: 3px;
+    border: none;
+}
+textarea{
+    width: 35%;
+    height: 35px;
+    border-radius: 3px;
+    border: none;
+}
+
+.container select{
+      width: 40%;
+    height: 35px;
+    border-radius: 3px;
+    border: none;
+}
+
+button{
+    width: 25%;
+    height: 50px;
+    background-color: rgb(233, 46, 25);
+    border: none;
+    border-radius: 4px;
+}
+
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    background-color: rgb(255, 0, 128);
+}
+

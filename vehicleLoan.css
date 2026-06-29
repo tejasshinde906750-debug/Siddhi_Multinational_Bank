@@ -1,0 +1,59 @@
+body{
+    text-align: center;
+    background-color: rgb(127, 221, 221);
+}
+
+.container {
+    background-color: goldenrod;
+    margin: auto;
+    display: flex;
+    gap: 5px; 
+      display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 35px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px;
+    box-shadow: color(silver);
+
+    width: 1050px;
+    height: 65%;
+
+}
+
+.Info {
+    width: 50%;
+    padding: 20px;
+    background: rgb(41, 138, 157);
+}
+
+input{
+    width: 310px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+select{
+      width: 310px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+button{
+    width: 250px;
+    height: 30px;
+    background-color: rgb(211, 211, 48);
+    border-radius: 5px;
+    color: black;
+    font: bold;
+}
+
+button:hover{
+    background-color: rgb(216, 216, 168);
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+    font: bold;
+    color: black;
+}

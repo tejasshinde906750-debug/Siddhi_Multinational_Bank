@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Banking Login</title>
+   <!--  - <link rel="stylesheet" href="MobileBankDashbord.css">-->
+   <style ">
+   
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: silver;
+}
+
+.phone{
+    width: 320px;
+    height: 650px;
+    background: black;
+    border-radius: 35px;
+    padding: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+.screen{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #1e3a8a, #2563eb);
+    border-radius: 28px;
+    padding: 40px 20px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Credit{
+    width: 100%;
+}
+
+.Credit button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.Credit button:hover{
+    background: #dbeafe;
+    transform: scale(1.03);
+}
+
+.Credit a{
+    text-decoration: none;
+    color: #1e3a8a;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+#m{
+    color: #dc2626;
+}
+   
+   </style>
+    
+</head>
+
+<body>
+
+<div class="phone">
+ 
+    <div class="screen">
+        <div class="logo">
+            <div class="Credit" >
+                <button><a href="MobileBankDeposit.html" class="deposit">Add cash</a></button><br><br>
+              <button>  <a href="MobileBankWithdraw.html" id="m">Withdraw</a></button><br><br>
+               <button><a href="MobileBankTransfer.html">Transfer</a></button><br><br>
+               <button> <a href="MobileBankUpdate.html" id="m">Update</a></button><br><br>
+                 <button> <a href="ViewDetailsInfo">Check Balance</a></button><br><br>
+                 
+               <button><a href="#" id="m">History</a></button><br><br>
+               
+                 
+                 
+
+            </div>
+        </div>
+
+       
+
+    </div>
+
+</div>
+
+</body>
+</html>

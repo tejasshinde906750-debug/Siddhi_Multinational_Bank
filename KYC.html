@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KYC</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 350px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    .form-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: #4facfe;
+        box-shadow: 0 0 5px #4facfe;
+    }
+
+    input[type="submit"] {
+        background: #4facfe;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+        background: #00c6ff;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #555;
+        font-size: 14px;
+    }
+
+    .back-link:hover {
+        color: #000;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="form-container">
+    <h2>KYC Form</h2>
+
+    <form action="KYCServlet" method="post">
+
+        <input type="number" placeholder="Enter Account Number" name="Account_No" required>
+        
+        <input type="number" placeholder="Enter Mobile Number" name="Mobile">
+        
+        <input type="email" placeholder="Enter Email ID" name="Email">
+        
+        <input type="text" placeholder="Enter Address" name="Address">
+
+        <input type="submit" value="Submit">
+        
+        <br>
+        <a href="BankDashbord.html" class="back-link">⬅ Back</a>
+
+    </form>
+</div>
+
+</body>
+</html>
